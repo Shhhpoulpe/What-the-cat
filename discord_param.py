@@ -1,1 +1,0 @@
-discord_token = 'OTIxMDI4NTE1MTQ5Nzg3MTY4.Ybs8pQ.z8-LsA3i4r89OkgPd8NwvZNZ5gY'
