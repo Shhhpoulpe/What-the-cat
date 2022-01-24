@@ -1,3 +1,7 @@
+import fastbook
+fastbook.setup_book()
+from fastbook import *
+
 import discord
 from discord.ext import tasks
 from discord.ext import commands
@@ -5,6 +9,7 @@ from discord_param import discord_token
 from discord.ext import commands
 
 client = discord.Client()
+learn = load_learner('export.pkl')
 
 @tasks.loop(seconds = 1)
 async def myLoop():
@@ -16,7 +21,7 @@ async def myLoop():
     print(message.attachments)
     if message.attachments:
         await channel.send(f"<@{message.author.id}> nice cat")
-        
+
 
 myLoop.start()
 client.run(discord_token)
