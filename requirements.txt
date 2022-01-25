@@ -1,0 +1,2 @@
+fastbook # Besoin de l'installer depuis conda
+discord.py
